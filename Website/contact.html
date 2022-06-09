@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <title>Questionaire</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav"><a href="./index.html">Home</a></li>
+                <li class="nav"><a href="./about.html">Comics</a></li>
+                <li class="nav"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="middle">
+        <form name="contact" method="POST" data-netlify="true">
+          <h1 class="contact">Contact</h1>
+          <p>
+            <label>Name: <input type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Date of birth: <input type="date" name="datofbirth" /></label>
+          </p>
+          <p>
+              Gender:
+              <br>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Male</label>
+              <br>
+              <input type="radio" name="gender" id="female" value="female"/>
+              <label for="female">Female</label>
+              <br>
+              <input type="radio" name="gender" id="other" value="other" />
+              <label for="other">Other</label>
+          </p> 
+          <p>
+            <label>Russia has good reasons to occupy Ukraine:</label><br>
+              <input type="radio" id="yes" name="yes" value="opinion" />
+              <label for="yes">Yes! </label><br>
+              <input type="radio" id="no" name="no" value="opinion" />
+              <label for="no">No! </label><br>
+              <input type="radio" id="notsure" name="notsure" value="opinion" />
+              <label for="notsure">I'm not sure </label><br>
+          </p>
+          <p>
+            <label>There should be a no-fly zone above Ukraine:</label><br>
+              <input type="radio" id="yes1" name="yes" value="opinion" />
+              <label for="yes">Yes! </label><br>
+              <input type="radio" id="no1" name="no" value="opinion" />
+              <label for="no">No! </label><br>
+              <input type="radio" id="notsure1" name="notsure" value="opinion" />
+              <label for="notsure">I'm not sure </label><br>
+          </p>
+          <p>
+            <label>Favorite person in Ukrainian war:</label><br>
+              <input type="checkbox" id="Putin" name="Putin" value="fav_person" />
+              <label for="Putin">Putin (Russia) </label><br>
+              <input type="checkbox" id="Zelensky" name="Zelensky" value="fav_person" />
+              <label for="Zelensky">Zelensky (Ukraine) </label><br>
+              <input type="checkbox" id="Von_der_Leyen" name="Von_der_Leyen" value="fav_person" />
+              <label for="Von_der_Leyen">Von der Leyen (EU) </label><br>
+              <input type="checkbox" id="Borat" name="Borat" value="fav_person" />
+              <label for="Borat">Rutte (The Netherlands)</label>
+          </p>
+          <p> Your message for Ukraine!:</p>
+          <p>
+              <label for="msg"> <textarea name="msg" id="msg" rows="7" cols="30"></textarea></label>
+          </p>
+          <p>
+              <button type="reset">Reset</button>
+          </p>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
